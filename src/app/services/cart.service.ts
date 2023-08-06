@@ -1,10 +1,7 @@
 import { Injectable, OnInit } from '@angular/core';
 import { Product } from '../classes/product';
 import { Subject } from 'rxjs';
-
-interface CartProduct extends Product {
-  amount: number;
-}
+import { CartProduct } from '../interfaces/cart-product';
 
 @Injectable({
   providedIn: 'root',

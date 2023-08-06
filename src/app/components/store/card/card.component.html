@@ -1,19 +1,16 @@
-<div class="card">
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>{{ product.title }}</mat-card-title>
+<div class="w-full h-full">
+  <mat-card class="h-full flex flex-col align-middle justify-evenly">
+    <mat-card-header class="h-28">
+      <mat-card-title>{{ product.title | slice : 0 : 40 }}</mat-card-title>
       <mat-card-subtitle>{{ product.category }}</mat-card-subtitle>
     </mat-card-header>
     <img
       mat-card-image
       [src]="product.image"
       [alt]="product.title"
-      class="card-image"
+      class="h-40 my-8"
     />
-    <mat-card-content>
-      <p>{{ product.description }}</p>
-    </mat-card-content>
-    <mat-card-actions>
+    <mat-card-actions class="mt-auto flex gap-2 justify-center">
       <button mat-raised-button color="primary">See details</button>
       <button
         mat-raised-button

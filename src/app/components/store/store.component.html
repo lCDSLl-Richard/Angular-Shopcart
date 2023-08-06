@@ -1,4 +1,9 @@
-<mat-spinner *ngIf="loading"></mat-spinner>
-<section class="card-container">
+<div *ngIf="loading" class="flex items-center justify-center w-screen h-screen">
+  <mat-spinner></mat-spinner>
+</div>
+
+<section
+  class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10 mx-8 my-4"
+>
   <app-card *ngFor="let product of products" [product]="product"> </app-card>
 </section>

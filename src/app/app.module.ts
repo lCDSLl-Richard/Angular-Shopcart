@@ -15,9 +15,10 @@ import { CardComponent } from './components/store/card/card.component';
 import { CartComponent } from './components/cart/cart.component';
 import { StoreComponent } from './components/store/store.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
 
 @NgModule({
-  declarations: [AppComponent, CardComponent, CartComponent, StoreComponent],
+  declarations: [AppComponent, CardComponent, CartComponent, StoreComponent, CartItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
