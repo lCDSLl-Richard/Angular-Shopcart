@@ -16,9 +16,17 @@ import { CartComponent } from './components/cart/cart.component';
 import { StoreComponent } from './components/store/store.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CartItemComponent } from './components/cart/cart-item/cart-item.component';
+import { ItemComponent } from './components/item/item.component';
 
 @NgModule({
-  declarations: [AppComponent, CardComponent, CartComponent, StoreComponent, CartItemComponent],
+  declarations: [
+    AppComponent,
+    CardComponent,
+    CartComponent,
+    StoreComponent,
+    CartItemComponent,
+    ItemComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

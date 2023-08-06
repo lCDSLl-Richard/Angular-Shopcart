@@ -1,9 +1,5 @@
-<link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-/>
 <mat-toolbar color="primary" class="sticky top-0 z-10 flex justify-between">
-  <span routerLink="">Fake Store</span>
+  <span class="hover:cursor-pointer" routerLink="">Fake Store</span>
   <button mat-icon-button routerLink="cart">
     <mat-icon
       [matBadge]="cartLength"
@@ -14,4 +10,4 @@
     >
   </button>
 </mat-toolbar>
-<router-outlet> </router-outlet>
+<router-outlet></router-outlet>

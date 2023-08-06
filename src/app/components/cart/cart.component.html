@@ -1,4 +1,6 @@
-<h2 *ngIf="!getItems().length">No items in cart!</h2>
+<h1 *ngIf="!getItems().length" class="w-full flex justify-center">
+  No items in cart!
+</h1>
 
 <section *ngIf="getItems().length" class="flex flex-col gap-2 mx-8 mt-4">
   <app-cart-item *ngFor="let item of getItems()" [item]="item"></app-cart-item>
