@@ -5,4 +5,5 @@
 <section *ngIf="getItems().length" class="flex flex-col gap-2 mx-8 mt-4">
   <app-cart-item *ngFor="let item of getItems()" [item]="item"></app-cart-item>
   <h2>Total: ${{ getTotal() | number : ".2" }}</h2>
+  <button mat-raised-button color="primary">Pay now</button>
 </section>

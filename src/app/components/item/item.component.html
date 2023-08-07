@@ -2,10 +2,28 @@
   <mat-spinner></mat-spinner>
 </div>
 
-<main *ngIf="!loading">
-  <h1>{{ product.title }}</h1>
-  <h2>{{ product.category }}</h2>
-  <img [src]="product.image" [alt]="product.title" />
-  <h3>${{ product.price }}</h3>
-  <p>{{ product.description }}</p>
+<main *ngIf="!loading" class="flex items-start justify-center m-8 gap-4">
+  <aside class="w-3/5 h-full flex flex-col gap-2">
+    <h1>{{ product.title }}</h1>
+    <h2>{{ product.category }}</h2>
+
+    <h3>${{ product.price }}</h3>
+    <p class="text-justify">{{ product.description }}</p>
+
+    <div>
+      <button
+        mat-raised-button
+        color="accent"
+        [color]="isInCart ? 'primary' : 'accent'"
+        (click)="handleClick()"
+      >
+        {{ isInCart ? "Go to cart!" : "Add to cart" }}
+      </button>
+    </div>
+  </aside>
+  <img
+    class="w-[30rem] h-[35rem]"
+    [src]="product.image"
+    [alt]="product.title"
+  />
 </main>
